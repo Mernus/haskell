@@ -1,0 +1,10 @@
+1)	((Char,Integer), String, [Double])
+2)	[(Double,Bool,(String,Integer))]
+3)	([Integer],[Double],[(Bool,Char)])
+4)	[[[(Integer,Bool)]]]
+5)	(((Char,Char),Char),[String])
+6)	(([Double],[Bool]),[Integer])
+7)	[Integer, (Integer,[Bool])]
+8)	(Bool,([Bool],[Integer]))
+9)	[([Bool],[Double])]
+10)	[([Integer],[Char])]
