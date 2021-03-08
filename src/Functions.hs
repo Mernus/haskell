@@ -3,10 +3,6 @@ module Functions where
 import           Data.Typeable
 
 
-formatResult :: Show var_type => var_type -> String
-formatResult res = "Result: " ++ show res ++ ";"
-
-
 max3 :: Int -> Int -> Int -> Int
 max3 a b c = maximum [a, b, c]
 max3Result :: Int

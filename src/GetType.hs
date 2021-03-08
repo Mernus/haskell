@@ -3,8 +3,8 @@ module GetType where
 import           Data.Typeable
 
 
-formatType :: Show var_type => var_type -> String
-formatType varType = "Type: " ++ show varType ++ ";"
+-- formatType :: Show var_type => var_type -> String
+-- formatType varType = "Type: " ++ show varType ++ ";"
 
 
 var_1 :: ((Char, Integer), String, [Double])
