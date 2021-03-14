@@ -28,8 +28,10 @@ source-repository head
 library
   exposed-modules:
       GetType
-    , FirstLab
+    , FirstAndSecondLab
     , Functions
+    , MoreHardFunctions
+    , ListGenerate
   other-modules:
       Paths_lab
   hs-source-dirs:

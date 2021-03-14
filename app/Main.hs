@@ -1,8 +1,8 @@
 module Main where
 
-import           Data.Foldable (for_)
-import           Data.Map      as M
-import           FirstLab
+import           Data.Foldable     (for_)
+import           Data.Map          as M
+import           FirstAndSecondLab
 
 main :: IO ()
 main =
