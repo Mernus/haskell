@@ -1,12 +1,14 @@
-module FirstAndSecondLab (results) where
+module LabsReportGenerator (results) where
 
 import           Data.Map          as M
 import           Data.Typeable
+import           Text.Printf
+
 import           Functions
 import           GetType
+import           Library
 import           ListGenerate
 import           MoreHardFunctions
-import           Text.Printf
 
 
 getHelpString :: String -> String
@@ -66,5 +68,8 @@ results = M.fromList([
     (formatExpr ("expr",  "`makePositive [1, -2, 3, 4, -5]`;"), formatExpr ("res", show makePositiveResult)),
     (formatExpr ("expr",  "`removeChar 'l' 'Hello'`;"), formatExpr ("res", show removeCharResult)),
     (formatExpr ("expr",  "`substitute 'p' 'w' 'Kapai'`;"), formatExpr ("res", show substituteResult)),
-    (formatExpr ("expr",  "`twopow 3`;"), formatExpr ("res", show twopowResult))
+    (formatExpr ("expr",  "`twopow 3`;"), formatExpr ("res", show twopowResult)),
+    (formatExpr ("expr",  "`isPeriodic . head bibliographicEntities`;"), formatExpr ("res", show isPeriodicResultTrue)),
+    (formatExpr ("expr",  "`isPeriodic 2`;"), formatExpr ("res", show isPeriodicResultFalse))
+
   ])

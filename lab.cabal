@@ -1,19 +1,14 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
---
--- see: https://github.com/sol/hpack
---
--- hash: eea3ef429e196404b218380dc6ca0fa888fe67e9f85df818e813518001475f2a
 
 name:           lab
-version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/lab#readme>
-homepage:       https://github.com/githubuser/lab#readme
-bug-reports:    https://github.com/githubuser/lab/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
+version:        0.2.0.0
+description:    Please see the README on GitHub at https://github.com/Mernus/haskell
+homepage:       https://github.com/Mernus/haskell
+bug-reports:    https://github.com/Mernus/haskell/issues
+author:         Denis Agaev
+maintainer:     mernusv@gmail.com
+copyright:      2021 Denis Agaev
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -23,15 +18,16 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/lab
+  location: https://github.com/Mernus/haskell
 
 library
   exposed-modules:
       GetType
-    , FirstAndSecondLab
+    , LabsReportGenerator
     , Functions
     , MoreHardFunctions
     , ListGenerate
+    , Library
   other-modules:
       Paths_lab
   hs-source-dirs:
@@ -39,6 +35,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
+    , time == 1.11.1.1
   default-language: Haskell2010
 
 executable lab-exe
@@ -52,6 +49,7 @@ executable lab-exe
       base >=4.7 && <5
     , lab
     , containers
+    , time == 1.11.1.1
   default-language: Haskell2010
 
 test-suite lab-test
@@ -66,4 +64,5 @@ test-suite lab-test
       base >=4.7 && <5
     , lab
     , containers
+    , time == 1.11.1.1
   default-language: Haskell2010
