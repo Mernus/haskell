@@ -28,6 +28,7 @@ library
     , MoreHardFunctions
     , ListGenerate
     , Library
+    , Number
   other-modules:
       Paths_lab
   hs-source-dirs:

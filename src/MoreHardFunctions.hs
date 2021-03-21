@@ -40,16 +40,6 @@ adjacentElementsPermutationResult :: [Integer]
 adjacentElementsPermutationResult = adjacentElementsPermutation [1, 2, 3, 4]
 
 
--- twopow :: Integer -> Integer
--- twopow 0 = 1
--- twopow 1 = 2
--- twopow power = if odd power
---                 then twopow . twopow . power `div` 2
---                 else 2 * twopow . twopow . (power - 1 `div` 2)
--- twopowResult :: Integer
--- twopowResult = twopow 3
-
-
 removeOdd :: [Integer] -> [Integer]
 removeOdd []     = []
 removeOdd (x:xs) = if odd x then removeOdd xs else x:removeOdd xs
