@@ -1,11 +1,12 @@
 module LabsReportGenerator (results) where
 
-import           Data.Map          as M
+import           Data.Map           as M
 import           Data.Typeable
 import           Text.Printf
 
 import           Functions
 import           GetType
+import           HighOrderFunctions
 import           Library
 import           ListGenerate
 import           MoreHardFunctions
@@ -80,5 +81,10 @@ results = M.fromList([
     (formatExpr ("expr",  "`plus(Next Zero, Next (Next Zero))`;"), formatExpr ("res", show plusResult)),
     (formatExpr ("expr",  "`mult(Next Zero, Next (Next Zero))`;"), formatExpr ("res", show multResult)),
     (formatExpr ("expr",  "`dec (Next (Next (Next Zero)))`;"), formatExpr ("res", show decResult)),
-    (formatExpr ("expr",  "`numberFactorial (Next (Next (Next Zero)))`;"), formatExpr ("res", show numberFactorialResult))
+    (formatExpr ("expr",  "`numberFactorial (Next (Next (Next Zero)))`;"), formatExpr ("res", show numberFactorialResult)),
+    (formatExpr ("expr",  "`average [2, 2.2, 4.6, 3, 9]`;"), formatExpr ("res", show averageResult)),
+    (formatExpr ("expr",  "`dotProduct [1, 2] [3.2, 4.5, 1]`;"), formatExpr ("res", show dotProductResult)),
+    (formatExpr ("expr",  "`evenCount [2, 4, 3, 1, 12]`;"), formatExpr ("res", show evenCountResult)),
+    (formatExpr ("expr",  "`quickSort [3.2, 4.5, 1.2, 7.0]`;"), formatExpr ("res", show quickSortResult)),
+    (formatExpr ("expr",  "`compareSort compareFunc [1, 2, 3, 4, 5, 6]`;"), formatExpr ("res", show compareSortResult))
   ])
